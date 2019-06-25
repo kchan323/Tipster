@@ -1,10 +1,10 @@
-# Project 1 - *Name of App Here*
+# Project 1 - *Tipster*
 
-**Name of your app** is a tip calculator application for iOS.
+**Tipster** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: **Katelin Chan**
 
-Time spent: **X** hours spent in total
+Time spent: **4.5** hours spent in total
 
 ## User Stories
 
