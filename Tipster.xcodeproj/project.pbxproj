@@ -15,6 +15,7 @@
 		F922631D22C2C3BF00D7670A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F922631C22C2C3BF00D7670A /* main.m */; };
 		F922632722C2C3BF00D7670A /* TipsterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F922632622C2C3BF00D7670A /* TipsterTests.m */; };
 		F922633222C2C3BF00D7670A /* TipsterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F922633122C2C3BF00D7670A /* TipsterUITests.m */; };
+		F922634822C2EE9000D7670A /* icon_money80.png in Resources */ = {isa = PBXBuildFile; fileRef = F922634722C2EE9000D7670A /* icon_money80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		F922632D22C2C3BF00D7670A /* TipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F922633122C2C3BF00D7670A /* TipsterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsterUITests.m; sourceTree = "<group>"; };
 		F922633322C2C3BF00D7670A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F922634722C2EE9000D7670A /* icon_money80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_money80.png; path = ../../../Downloads/icon_money80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F922631122C2C3BE00D7670A /* ViewController.m */,
 				F922631322C2C3BE00D7670A /* Main.storyboard */,
 				F922631622C2C3BF00D7670A /* Assets.xcassets */,
+				F922634722C2EE9000D7670A /* icon_money80.png */,
 				F922631822C2C3BF00D7670A /* LaunchScreen.storyboard */,
 				F922631B22C2C3BF00D7670A /* Info.plist */,
 				F922631C22C2C3BF00D7670A /* main.m */,
@@ -238,6 +241,7 @@
 				F922631A22C2C3BF00D7670A /* LaunchScreen.storyboard in Resources */,
 				F922631722C2C3BF00D7670A /* Assets.xcassets in Resources */,
 				F922631522C2C3BE00D7670A /* Main.storyboard in Resources */,
+				F922634822C2EE9000D7670A /* icon_money80.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

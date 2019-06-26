@@ -53,6 +53,7 @@
     
     [UIView animateWithDuration:1 animations:^{
         self.tipLabel.alpha = 0;
+        self.totalLabel.alpha = 0;
     }];
     
 }
@@ -67,6 +68,7 @@
     
     [UIView animateWithDuration:1 animations:^{
         self.tipLabel.alpha = 1;
+        self.totalLabel.alpha = 1;
     }];
     
     self.mealBillField.frame = newFrame;
