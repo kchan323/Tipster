@@ -51,8 +51,11 @@
         self.mealBillField.frame = CGRectMake(self.mealBillField.frame.origin.x, self.mealBillField.frame.origin.y + 30, self.mealBillField.frame.size.width, self.mealBillField.frame.size.height);
     }];
     
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         self.tipLabel.alpha = 0;
+    }];
+    
+    [UIView animateWithDuration:1 animations:^{
         self.totalLabel.alpha = 0;
     }];
     
@@ -68,6 +71,9 @@
     
     [UIView animateWithDuration:1 animations:^{
         self.tipLabel.alpha = 1;
+    }];
+    
+    [UIView animateWithDuration:0.5 animations:^{
         self.totalLabel.alpha = 1;
     }];
     

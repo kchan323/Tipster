@@ -116,11 +116,7 @@
                         <action selector="onTap:" destination="BYZ-38-t0r" id="nca-1k-RdV"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="rDF-v8-z5l">
-                    <connections>
-                        <action selector="onTapSettings:" destination="BYZ-38-t0r" id="T3q-NG-aBS"/>
-                    </connections>
-                </tapGestureRecognizer>
+                <tapGestureRecognizer id="rDF-v8-z5l"/>
             </objects>
             <point key="canvasLocation" x="1080.8" y="107.88177339901478"/>
         </scene>
