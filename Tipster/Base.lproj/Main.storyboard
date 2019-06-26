@@ -82,6 +82,18 @@
                                     <action selector="onEditingEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="MK4-cK-P3e"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-Lq-vC9">
+                                <rect key="frame" x="16" y="444" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rDF-v8-z5l" appends="YES" id="nzy-NZ-bhd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.18783469105241404" green="0.66853545984455964" blue="0.44659869378031514" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
@@ -104,23 +116,55 @@
                         <action selector="onTap:" destination="BYZ-38-t0r" id="nca-1k-RdV"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="rDF-v8-z5l">
+                    <connections>
+                        <action selector="onTapSettings:" destination="BYZ-38-t0r" id="T3q-NG-aBS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1080.8" y="107.88177339901478"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="0Aj-ae-Yg1">
             <objects>
                 <viewController id="UfD-RQ-cOD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ip5-nB-XNn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-Vb-Xp0">
+                                <rect key="frame" x="16" y="113" width="292" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QOT-zM-5aS">
+                                <rect key="frame" x="16" y="157" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="22%"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS4-jd-cJz">
+                                <rect key="frame" x="16" y="193" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18783469110000001" green="0.66853545979999995" blue="0.4465986938" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="J9P-qN-6zI"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Settings" id="LMv-uZ-NKA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3xy-ac-t92" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1759.2" y="107.88177339901478"/>
+            <point key="canvasLocation" x="2701.5999999999999" y="107.88177339901478"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i5D-PW-Lno">
@@ -139,6 +183,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UH2-ds-kqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.40000000000001" y="107.88177339901478"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7ag-8a-Kza">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h7i-W7-lT3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="llM-pz-dZk">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UfD-RQ-cOD" kind="relationship" relationship="rootViewController" id="AoV-xS-9pP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bvB-xl-saX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759.2" y="107.88177339901478"/>
         </scene>
     </scenes>
 </document>

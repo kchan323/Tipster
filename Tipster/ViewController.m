@@ -74,4 +74,9 @@
     self.mealBillField.frame = newFrame;
 }
 
+- (IBAction)onTapSettings:(id)sender {
+    NSLog(@"Settings");
+    
+
+}
 @end
